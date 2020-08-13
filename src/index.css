@@ -1,13 +1,156 @@
-body {
+*,
+*::before,
+*::after {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  box-sizing: inherit;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
 }
+
+body {
+  font-family: fantasy;
+  line-height: 1.6;
+}
+
+.nav {
+  background-color: blue;
+  padding: 2rem;
+  font-size: 2rem;
+  color: #fff;
+}
+
+.nav__icon {
+  margin-right: 5px;
+}
+
+.nav__title {
+  color: inherit;
+  text-decoration: none;
+  letter-spacing: 3px;
+  font-weight: normal;
+}
+
+.album {
+  width: 50%;
+  margin: 0 auto;
+  padding: 5rem;
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+}
+
+.album__title {
+  font-size: 6rem;
+  font-weight: 100;
+}
+
+.album__text {
+  font-size: 1.8rem;
+  color: #757575;
+}
+
+.album__btn {
+  margin-top: 3rem;
+  margin-bottom: 5rem;
+}
+
+.album__btn--1, .album__btn--2 {
+  font-size: 1.3rem;
+  letter-spacing: 1px;
+  font-weight: bold;
+  text-transform: uppercase;
+  padding: 1rem 1.5rem;
+  border: 1px solid #8CBAE8;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.album__btn--1 {
+  background-color: rgb(54, 54, 240);
+  color: #fff;
+  margin-right: 3rem;
+}
+
+.album__btn--1:hover {
+  background-color: rgb(28, 28, 180);;
+}
+
+.album__btn--2:hover {
+  background-color: #F6FAFD;
+  color: rgb(54, 54, 240);
+
+}
+
+.full-card {
+  display: grid;
+  grid-template-columns: repeat(3, 30rem);
+  grid-template-rows: repeat(3, min-content);
+  justify-content: center;
+  grid-gap: 2rem;
+}
+
+.card {
+  font-family: Arial, Helvetica, sans-serif;
+  border: 1px solid #f2f2f3;
+  border-radius: 5px;
+}
+
+.cards {
+  padding: 2rem;
+  overflow: hidden;
+}
+
+.card__img {
+  width: 100%;
+  height: 20rem;
+  object-fit: cover;
+  border-radius: 5px 5px 0 0;
+}
+
+.card__heading {
+  font-size: 3rem;
+}
+
+.card__pera {
+  font-size: 1.5rem;
+}
+
+.card__link {
+  margin-top: 2rem;
+}
+
+.card__link--1, .card__link--2 {
+  display: inline-block;
+  text-decoration: none;
+  text-transform: uppercase;
+  padding: .5rem 1.3rem;
+  border-radius: 3px;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+
+.card__link--1:hover, .card__link--2:hover {
+  background-color: #F6FAFD;
+}
+
+.footer {
+  margin-top: 2rem;
+  padding: 2rem;
+  background-color: #343434;
+  color: #fff;
+  text-align: center;
+  font-weight: normal;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.footer h2 {
+  font-size: 4rem;
+}
+
+.footer p {
+  font-size: 1.8rem;
+}
+
